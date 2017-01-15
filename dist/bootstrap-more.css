@@ -1,0 +1,80 @@
+/* form */
+form select.form-control {
+  padding-left: 9px; }
+
+form .form-control.error {
+  border-color: #ff6a00; }
+  form .form-control.error + label.error {
+    color: #ff6a00;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: normal; }
+
+form input[type=radio] + label.error,
+form input[type=checkbox] + label.error {
+  font-weight: normal;
+  position: absolute;
+  color: #ff6a00;
+  max-width: none;
+  width: 200px;
+  display: block;
+  top: 18px;
+  left: 0; }
+
+form .row .form-control.error + label.error {
+  right: 15px; }
+
+form.form-inline .form-control.error + label.error {
+  right: 0;
+  top: -22px; }
+  @media (max-width: 768px) {
+    form.form-inline .form-control.error + label.error {
+      top: 0; } }
+
+form.form-horizontal .form-control.error + label.error {
+  right: 20px;
+  top: 6px; }
+
+form.readonly {
+  display: none; }
+  form.readonly button,
+  form.readonly input[type=button],
+  form.readonly input[type=submit] {
+    display: none; }
+  form.readonly .form-control-feedback {
+    display: none; }
+  form.readonly .input-group-addon {
+    padding: 2px 0;
+    background-color: #fff;
+    border: none;
+    vertical-align: top; }
+  form.readonly .form-group {
+    margin-bottom: 5px; }
+    form.readonly .form-group .form-control-static {
+      padding-top: 0;
+      min-height: 12px; }
+  form.readonly.form-horizontal label {
+    padding-top: 0;
+    padding-right: 0; }
+  form.readonly.form-inline .form-control-static {
+    padding-right: 15px; }
+
+/* panels */
+.panel-example {
+  padding: 55px 15px 15px 15px;
+  position: relative; }
+  .panel-example:after {
+    content: "Example";
+    text-transform: uppercase;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 1.15em;
+    font-weight: 500;
+    color: rgba(119, 119, 119, 0.6);
+    letter-spacing: 1px; }
+  .panel-example .panel-heading {
+    margin: 0 -15px;
+    border-bottom: none;
+    font-weight: bold; }

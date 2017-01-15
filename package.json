@@ -1,0 +1,34 @@
+{
+  "name": "bootstrap-more",
+  "version": "1.0.0",
+  "description": "Extensions for bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BndyNet/bootstrap-more.git"
+  },
+  "author": "Bndy Zhang",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/BndyNet/bootstrap-more/issues"
+  },
+  "homepage": "https://github.com/BndyNet/bootstrap-more#readme",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "grunt": "^1.0.1",
+    "grunt-banner": "^0.6.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-coffee": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0",
+    "jquery": "^2.2.4",
+    "moment": "^2.17.1",
+    "node-sass": "^4.3.0"
+  }
+}
