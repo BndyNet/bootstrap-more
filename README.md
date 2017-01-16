@@ -1,4 +1,4 @@
-# [Bootstrap More](https://github.com/bndynet/bootstrap-more)
+ï»¿# [Bootstrap More](https://github.com/bndynet/bootstrap-more)
 
 This is the extensions based on Bootstrap. 
 
@@ -21,17 +21,17 @@ Within the download you'll find the following directories and files, logically g
 
 ```
 bootstrap-more/
-©À©¤©¤ dist/
-©¦   ©À©¤©¤ bootstrap-more.css
-©¦   ©À©¤©¤ bootstrap-more.min.css
-©¦   ©À©¤©¤ bootstrap-more.js
-©¦   ©¸©¤©¤ bootstrap-more.min.js
-©À©¤©¤ demo/
-©¦   ©¸©¤©¤ bootstrap.min.js
-©¸©¤©¤ src/
-    ©À©¤©¤ _variables.scss
-    ©À©¤©¤ bootstrap-more.scss
-    ©¸©¤©¤ bootstrap-more.coffee
+â”œâ”€â”€ dist/
+â”‚   â”œâ”€â”€ bootstrap-more.css
+â”‚   â”œâ”€â”€ bootstrap-more.min.css
+â”‚   â”œâ”€â”€ bootstrap-more.js
+â”‚   â””â”€â”€ bootstrap-more.min.js
+â”œâ”€â”€ demo/
+â”‚   â””â”€â”€ bootstrap.min.js
+â””â”€â”€ src/
+    â”œâ”€â”€ _variables.scss
+    â”œâ”€â”€ bootstrap-more.scss
+    â””â”€â”€ bootstrap-more.coffee
 ```
 
 We provide compiled CSS and JS (`bootstrap-more.*`), as well as compiled and minified CSS and JS (`bootstrap-more.min.*`). 
