@@ -1,3 +1,8 @@
+/*!
+ * bootstrap-more v1.0.0 (https://github.com/BndyNet/bootstrap-more#readme)
+ * (c) 2014-2017 Bndy.Net (http://www.bndy.net)
+ */
+
 /* form */
 form select.form-control {
   padding-left: 9px; }
@@ -62,7 +67,7 @@ form.readonly {
 
 /* panels */
 .panel-example {
-  padding: 55px 15px 15px 15px;
+  padding: 55px 0 0 0;
   position: relative; }
   .panel-example:after {
     content: "Example";
@@ -75,6 +80,25 @@ form.readonly {
     color: rgba(119, 119, 119, 0.6);
     letter-spacing: 1px; }
   .panel-example .panel-heading {
-    margin: 0 -15px;
     border-bottom: none;
     font-weight: bold; }
+  .panel-example .panel-footer textarea.code {
+    width: 100%;
+    min-height: 120px; }
+
+/* page-article */
+.page-article {
+  padding: 20px; }
+  .page-article .sections section {
+    padding-bottom: 30px; }
+  .page-article .navs ul.nav-article li {
+    border-left: solid 2px transparent; }
+    .page-article .navs ul.nav-article li.active {
+      border-left-color: blue; }
+      .page-article .navs ul.nav-article li.active > a {
+        font-weight: bold; }
+    .page-article .navs ul.nav-article li a {
+      padding: 5px 10px; }
+    .page-article .navs ul.nav-article li ul a {
+      font-size: .9em;
+      padding-left: 15px; }

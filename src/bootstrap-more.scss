@@ -1,5 +1,9 @@
 @import "_variables.scss";
 
+xmp {
+
+}
+
 /* form */
 form {
   select.form-control {
@@ -126,7 +130,7 @@ form {
 
 /* panels */
 .panel-example {
-  padding: 55px 15px 15px 15px;
+  padding: 55px 0 0 0;
   position: relative;
 
   &:after {
@@ -142,8 +146,48 @@ form {
   }
 
   .panel-heading {
-    margin: 0 -15px;
     border-bottom: none;
     font-weight: bold;
+  }
+  .panel-footer {
+    textarea.code {
+      width: 100%;
+      min-height: 120px;
+    }
+  }
+}
+
+/* page-article */
+.page-article {
+  padding: 20px;
+
+  .sections {
+    section {
+      padding-bottom: 30px;
+    }
+  }
+
+  .navs {
+    ul.nav-article {
+      li {
+        border-left: solid 2px transparent;
+        &.active {
+          border-left-color: blue;
+
+          & > a {
+            font-weight: bold;
+          }
+        }
+
+        a {
+          padding: 5px 10px;
+        }
+
+        ul a {
+          font-size: .9em;
+          padding-left: 15px;
+        }
+      }
+    }
   }
 }

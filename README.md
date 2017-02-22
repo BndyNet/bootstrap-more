@@ -13,6 +13,10 @@ Requires:
 - Clone the repo
 
     `git clone https://github.com/bndynet/bootstrap-more.git`
+   
+- Install Node.js and packages
+    
+    `npm install`
 
 
 ### What's included
@@ -27,7 +31,7 @@ bootstrap-more/
 │   ├── bootstrap-more.js
 │   └── bootstrap-more.min.js
 ├── demo/
-│   └── bootstrap.min.js
+│   └── index.html
 └── src/
     ├── _variables.scss
     ├── bootstrap-more.scss
