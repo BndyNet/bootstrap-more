@@ -65,6 +65,8 @@ $ ->
       nav.append(navItem)
     $(eleSection).find("section").each ->
       _generateNav($(this), navItem)
+      return
+    return
   $(".page-article .sections > section").each ->
     _generateNav $(this), null
   $(".nav-article").on "click", "a", ->

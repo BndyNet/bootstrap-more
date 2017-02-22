@@ -76,8 +76,8 @@ $(function() {
       }
       nav.append(navItem);
     }
-    return $(eleSection).find("section").each(function() {
-      return _generateNav($(this), navItem);
+    $(eleSection).find("section").each(function() {
+      _generateNav($(this), navItem);
     });
   };
   $(".page-article .sections > section").each(function() {
