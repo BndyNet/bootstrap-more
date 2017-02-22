@@ -77,7 +77,7 @@ $(function() {
       nav.append(navItem);
     }
     return $(eleSection).find("section").each(function() {
-      return generateNav($(this), navItem);
+      return _generateNav($(this), navItem);
     });
   };
   $(".page-article .sections > section").each(function() {
