@@ -204,9 +204,58 @@ ng\:form {
 }
 
 .ng-animate-shim {
-  visibility:hidden;
+  visibility: hidden;
 }
 
 .ng-anchor {
-  position:absolute;
+  position: absolute;
+}
+
+/* font awesome*/
+@mixin fa-tail {
+  background-color: #fff;
+  position: absolute;
+  z-index: 999;
+  font-size: .8em;
+}
+
+.fa-tail {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 1em;
+  height: 1em;
+
+  .fa-tail-sup-left {
+    @include fa-tail;
+    margin-left: -.25em;
+    margin-top: -.25em;
+    &.circle {
+      border-radius: 40%;
+    }
+  }
+  .fa-tail-sup-right {
+    @include fa-tail;
+    margin-left: .55em;
+    margin-top: -.25em;
+    &.circle {
+      border-radius: 40%;
+    }
+  }
+  .fa-tail-sub-left {
+    @include fa-tail;
+    margin-top: .55em;
+    margin-left: -.25em;
+    &.circle {
+      border-radius: 40%;
+    }
+  }
+  .fa-tail-sub-right {
+    @include fa-tail;
+    margin-top: .55em;
+    margin-left: .55em;
+    &.circle {
+      border-radius: 40%;
+    }
+  }
 }
