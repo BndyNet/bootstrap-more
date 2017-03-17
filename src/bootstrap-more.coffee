@@ -37,10 +37,10 @@ $ ->
   $("form.readonly:not(:visible)").show()
 
   # init navs for .page-article
-  _generateNav = (eleSection, parentNav) ->
-    h3 = $(eleSection).find("h3:first").clone()
-    h3.find("small").remove()
-    title = h3.text().trim()
+  _generateNav = (eleSection, hNumber, parentNav) ->
+    header = $(eleSection).find("h#{hNumber}:first").clone()
+    header.find("small").remove()
+    title = header.text().trim()
     code = title.replace ///\W+///g, "-"
     $(eleSection).attr "id", code
 
@@ -64,11 +64,11 @@ $ ->
           navContainer.append(nav)
       nav.append(navItem)
     $(eleSection).find("section").each ->
-      _generateNav($(this), navItem)
+      _generateNav($(this), hNumber + 1, navItem)
       return
     return
   $(".page-article .sections > section").each ->
-    _generateNav $(this), null
+    _generateNav $(this), 3, null
   $(".nav-article").on "click", "a", ->
     $(".nav-article li").removeClass("active")
     $(this).parent().addClass("active")

@@ -3,6 +3,9 @@
  * (c) 2014-2017 Bndy.Net (http://www.bndy.net)
  */
 
+.label {
+  font-weight: normal; }
+
 /* form */
 form select.form-control {
   padding-left: 9px; }
@@ -161,3 +164,84 @@ ng\:form {
     margin-left: .55em; }
     .fa-tail .fa-tail-sub-right.circle {
       border-radius: 40%; }
+
+/* themes */
+.corner90 .btn,
+.corner90 .form-control,
+.corner90 .input-group-addon,
+.corner90 .navbar,
+.corner90 .dropdown-menu,
+.corner90 .label,
+.corner90 .jumbotron,
+.corner90 .panel,
+.corner90 .panel-heading,
+.corner90 .well,
+.corner90 .well-lg,
+.corner90 .alert,
+.corner90 .list-group-item:first-child,
+.corner90 .list-group-item:last-child {
+  border-radius: 0; }
+
+.flat {
+  /* buttons */
+  /* inputs */
+  /* navbar */
+  /* alert */ }
+  .flat .btn {
+    padding-top: 7px;
+    padding-bottom: 7px; }
+    .flat .btn.active, .flat .btn:active, .flat .btn.focus, .flat .btn:focus {
+      box-shadow: none;
+      outline: none; }
+  .flat .btn-default,
+  .flat .btn-primary,
+  .flat .btn-info,
+  .flat .btn-warning,
+  .flat .btn-danger {
+    background-image: none;
+    box-shadow: none;
+    border: none; }
+  .flat .btn-default {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    background-color: #4e6d8d;
+    color: #fff; }
+    .flat .btn-default:hover {
+      background-color: #34495e;
+      color: #fff; }
+  .flat .btn-group.open .dropdown-toggle {
+    box-shadow: none; }
+    .flat .btn-group.open .dropdown-toggle.btn-default {
+      background-color: #34495e;
+      color: #fff; }
+  .flat .form-control {
+    box-shadow: none; }
+    .flat .form-control:focus {
+      outline: none;
+      box-shadow: none;
+      border-color: #ccc; }
+  .flat .input-group .input-group-addon {
+    background-color: #fff; }
+    .flat .input-group .input-group-addon + .form-control {
+      padding-left: 0;
+      border-left-width: 0;
+      border-right-width: 1px; }
+  .flat .input-group .form-control {
+    border-right-width: 0; }
+    .flat .input-group .form-control + .input-group-addon {
+      padding-left: 0; }
+  .flat .navbar.navbar-default, .flat .navbar.navbar-inverse {
+    background-image: none;
+    box-shadow: none;
+    border: none; }
+    .flat .navbar.navbar-default .navbar-nav > .active > a,
+    .flat .navbar.navbar-default .navbar-nav > .open > a, .flat .navbar.navbar-inverse .navbar-nav > .active > a,
+    .flat .navbar.navbar-inverse .navbar-nav > .open > a {
+      background-image: none;
+      box-shadow: none; }
+  .flat .alert,
+  .flat .alert-primary,
+  .flat .alert-info,
+  .flat .alert-warning,
+  .flat .alert-danger {
+    border: none;
+    background-image: none; }

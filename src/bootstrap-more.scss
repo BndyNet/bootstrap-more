@@ -1,7 +1,7 @@
 @import "_variables.scss";
 
-xmp {
-
+.label {
+  font-weight: normal;
 }
 
 /* form */
@@ -257,5 +257,129 @@ ng\:form {
     &.circle {
       border-radius: 40%;
     }
+  }
+}
+
+/* themes */
+.corner90 {
+  .btn,
+  .form-control,
+  .input-group-addon,
+  .navbar,
+  .dropdown-menu,
+  .label,
+  .jumbotron,
+  .panel,
+  .panel-heading,
+  .well,
+  .well-lg,
+  .alert,
+  .list-group-item:first-child,
+  .list-group-item:last-child {
+    border-radius: 0;
+  }
+}
+
+.flat {
+  /* buttons */
+  .btn {
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+    &.active,
+    &:active,
+    &.focus,
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+
+  .btn-default,
+  .btn-primary,
+  .btn-info,
+  .btn-warning,
+  .btn-danger {
+    background-image: none;
+    box-shadow: none;
+    border: none;
+  }
+
+  .btn-default {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
+    background-color: #4e6d8d;
+    color: #fff;
+
+    &:hover {
+      background-color: #34495e;
+      color: #fff;
+    }
+  }
+
+  .btn-group {
+    &.open {
+      .dropdown-toggle {
+        box-shadow: none;
+        &.btn-default {
+          background-color: #34495e;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  /* inputs */
+  .form-control {
+    box-shadow: none;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      border-color: #ccc;
+    }
+  }
+
+  .input-group {
+    .input-group-addon {
+      background-color: #fff;
+      & + .form-control {
+        padding-left: 0;
+        border-left-width: 0;
+        border-right-width: 1px;
+      }
+    }
+
+    .form-control {
+      border-right-width: 0;
+
+      & + .input-group-addon {
+        padding-left: 0;
+      }
+    }
+  }
+
+  /* navbar */
+  .navbar {
+    &.navbar-default,
+    &.navbar-inverse {
+      background-image: none;
+      box-shadow: none;
+      border: none;
+
+      .navbar-nav > .active > a,
+      .navbar-nav > .open > a {
+        background-image: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  /* alert */
+  .alert,
+  .alert-primary,
+  .alert-info,
+  .alert-warning,
+  .alert-danger {
+    border: none;
+    background-image: none;
   }
 }

@@ -46,11 +46,11 @@ $(function() {
     }
   });
   $("form.readonly:not(:visible)").show();
-  _generateNav = function(eleSection, parentNav) {
-    var code, h3, nav, navContainer, navItem, title;
-    h3 = $(eleSection).find("h3:first").clone();
-    h3.find("small").remove();
-    title = h3.text().trim();
+  _generateNav = function(eleSection, hNumber, parentNav) {
+    var code, header, nav, navContainer, navItem, title;
+    header = $(eleSection).find("h" + hNumber + ":first").clone();
+    header.find("small").remove();
+    title = header.text().trim();
     code = title.replace(/\W+/g, "-");
     $(eleSection).attr("id", code);
     navItem = $("<li><a></a></li>");
@@ -77,11 +77,11 @@ $(function() {
       nav.append(navItem);
     }
     $(eleSection).find("section").each(function() {
-      _generateNav($(this), navItem);
+      _generateNav($(this), hNumber + 1, navItem);
     });
   };
   $(".page-article .sections > section").each(function() {
-    return _generateNav($(this), null);
+    return _generateNav($(this), 3, null);
   });
   $(".nav-article").on("click", "a", function() {
     $(".nav-article li").removeClass("active");
