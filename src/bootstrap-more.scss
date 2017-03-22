@@ -1,8 +1,119 @@
 @import "_variables.scss";
 
+a {
+  cursor: pointer;
+}
+
+/* bootstrap extensions */
 .label {
   font-weight: normal;
 }
+
+/* navbar */
+.navbar {
+  .navbar-nav {
+    li {
+      position: relative;
+
+      &:hover,
+      &:focus {
+        & > .sub-menu {
+          display: block;
+        }
+      }
+    }
+
+    .dropdown-menu {
+      border: none;
+    }
+
+    .sub-menu {
+      display: none;
+      position: absolute;
+      left: 0;
+      min-width: 160px;
+      background-color: #ffffff;
+      list-style: none;
+      padding: 5px 0;
+      margin: 0;
+      z-index: 999;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+
+      a {
+        color: #333;
+        padding: 5px 15px;
+        display: block;
+        text-decoration: none;
+      }
+
+      .sub-menu {
+        left: 100%;
+        top: 0;
+      }
+    }
+  }
+}
+
+@mixin navbarTheme($name, $color) {
+  .navbar.navbar-#{$name} {
+    background-color: $color;
+
+    a {
+      color: #ffffff;
+    }
+
+    .navbar-nav {
+      li {
+        & > a {
+          &:focus,
+          &:hover,
+          &:active {
+            background-color: darken($color, 10%);
+          }
+        }
+      }
+
+      li.active,
+      li.open {
+        & > a{
+          background-color: darken($color, 10%);
+        }
+      }
+
+      .dropdown-menu,
+      .sub-menu {
+        background-color: $color;
+
+        li {
+          &:focus,
+          &:hover,
+          &:active,
+          a:focus,
+          a:hover,
+          a:active {
+            background: darken($color, 10%) none;
+          }
+
+          &.divider {
+            background-color: lighten($color, 20%);
+            margin: 5px 0;
+          }
+
+          a {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include navbarTheme('primary', $color-primary);
+@include navbarTheme('info', $color-info);
+@include navbarTheme('warning', $color-warning);
+@include navbarTheme('success', $color-success);
+@include navbarTheme('danger', $color-danger);
+@include navbarTheme('black', #101010);
 
 /* form */
 form {
@@ -12,11 +123,11 @@ form {
 
   .form-control {
     &.error {
-      border-color: $color-error;
+      border-color: $color-danger;
 
       & + label {
         &.error {
-          color: $color-error;
+          color: $color-danger;
           position: absolute;
           right: 0;
           top: 0;
@@ -32,7 +143,7 @@ form {
       &.error {
         font-weight: normal;
         position: absolute;
-        color: $color-error;
+        color: $color-danger;
         max-width: none;
         width: 200px;
         display: block;

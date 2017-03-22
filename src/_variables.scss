@@ -1,4 +1,4 @@
-$color-error: #ff6a00 !default;
+/* $color-error: #ff6a00 !default; */
 
 $gray-base:              #000 !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
@@ -6,3 +6,10 @@ $gray-dark:              lighten($gray-base, 20%) !default;   // #333
 $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+
+$color-primary:             #265a88 !default;
+$color-success:             #5cb85c !default;
+$color-info:                #5bc0de !default;
+$color-warning:             #f0ad4e !default;
+$color-danger:              #d9534f !default;
+$color-inverse:             #292b2c !default;
