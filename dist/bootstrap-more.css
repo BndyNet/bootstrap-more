@@ -238,6 +238,8 @@ ng\:form {
     .flat .navbar.navbar-inverse .navbar-nav > .open > a {
       background-image: none;
       box-shadow: none; }
+  .flat .dropdown-menu {
+    border: none; }
   .flat .alert,
   .flat .alert-primary,
   .flat .alert-info,
