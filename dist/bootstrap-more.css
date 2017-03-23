@@ -47,10 +47,10 @@ a {
 
 .navbar.navbar-primary {
   background-color: #265a88; }
-  .navbar.navbar-primary .navbar-nav li > a {
+  .navbar.navbar-primary a {
     color: #ffffff; }
-    .navbar.navbar-primary .navbar-nav li > a:focus, .navbar.navbar-primary .navbar-nav li > a:hover, .navbar.navbar-primary .navbar-nav li > a:active {
-      background-color: #1b4060; }
+  .navbar.navbar-primary .navbar-nav li > a:focus, .navbar.navbar-primary .navbar-nav li > a:hover, .navbar.navbar-primary .navbar-nav li > a:active {
+    background-color: #1b4060; }
   .navbar.navbar-primary .navbar-nav li.active, .navbar.navbar-primary .navbar-nav li.open, .navbar.navbar-primary .navbar-nav li:focus, .navbar.navbar-primary .navbar-nav li:hover, .navbar.navbar-primary .navbar-nav li:active {
     background-color: #1b4060; }
     .navbar.navbar-primary .navbar-nav li.active > a, .navbar.navbar-primary .navbar-nav li.open > a, .navbar.navbar-primary .navbar-nav li:focus > a, .navbar.navbar-primary .navbar-nav li:hover > a, .navbar.navbar-primary .navbar-nav li:active > a {
@@ -73,7 +73,7 @@ a {
       background: #1b4060 none; }
     .navbar.navbar-primary .navbar-nav .dropdown-menu li.divider,
     .navbar.navbar-primary .navbar-nav .sub-menu li.divider {
-      background-color: #488ecc;
+      background-color: #3174b0;
       margin: 5px 0; }
     .navbar.navbar-primary .navbar-nav .dropdown-menu li a,
     .navbar.navbar-primary .navbar-nav .sub-menu li a {
@@ -81,10 +81,10 @@ a {
 
 .navbar.navbar-info {
   background-color: #5bc0de; }
-  .navbar.navbar-info .navbar-nav li > a {
+  .navbar.navbar-info a {
     color: #ffffff; }
-    .navbar.navbar-info .navbar-nav li > a:focus, .navbar.navbar-info .navbar-nav li > a:hover, .navbar.navbar-info .navbar-nav li > a:active {
-      background-color: #31b0d5; }
+  .navbar.navbar-info .navbar-nav li > a:focus, .navbar.navbar-info .navbar-nav li > a:hover, .navbar.navbar-info .navbar-nav li > a:active {
+    background-color: #31b0d5; }
   .navbar.navbar-info .navbar-nav li.active, .navbar.navbar-info .navbar-nav li.open, .navbar.navbar-info .navbar-nav li:focus, .navbar.navbar-info .navbar-nav li:hover, .navbar.navbar-info .navbar-nav li:active {
     background-color: #31b0d5; }
     .navbar.navbar-info .navbar-nav li.active > a, .navbar.navbar-info .navbar-nav li.open > a, .navbar.navbar-info .navbar-nav li:focus > a, .navbar.navbar-info .navbar-nav li:hover > a, .navbar.navbar-info .navbar-nav li:active > a {
@@ -107,7 +107,7 @@ a {
       background: #31b0d5 none; }
     .navbar.navbar-info .navbar-nav .dropdown-menu li.divider,
     .navbar.navbar-info .navbar-nav .sub-menu li.divider {
-      background-color: #b0e1ef;
+      background-color: #85d0e7;
       margin: 5px 0; }
     .navbar.navbar-info .navbar-nav .dropdown-menu li a,
     .navbar.navbar-info .navbar-nav .sub-menu li a {
@@ -115,10 +115,10 @@ a {
 
 .navbar.navbar-warning {
   background-color: #f0ad4e; }
-  .navbar.navbar-warning .navbar-nav li > a {
+  .navbar.navbar-warning a {
     color: #ffffff; }
-    .navbar.navbar-warning .navbar-nav li > a:focus, .navbar.navbar-warning .navbar-nav li > a:hover, .navbar.navbar-warning .navbar-nav li > a:active {
-      background-color: #ec971f; }
+  .navbar.navbar-warning .navbar-nav li > a:focus, .navbar.navbar-warning .navbar-nav li > a:hover, .navbar.navbar-warning .navbar-nav li > a:active {
+    background-color: #ec971f; }
   .navbar.navbar-warning .navbar-nav li.active, .navbar.navbar-warning .navbar-nav li.open, .navbar.navbar-warning .navbar-nav li:focus, .navbar.navbar-warning .navbar-nav li:hover, .navbar.navbar-warning .navbar-nav li:active {
     background-color: #ec971f; }
     .navbar.navbar-warning .navbar-nav li.active > a, .navbar.navbar-warning .navbar-nav li.open > a, .navbar.navbar-warning .navbar-nav li:focus > a, .navbar.navbar-warning .navbar-nav li:hover > a, .navbar.navbar-warning .navbar-nav li:active > a {
@@ -141,7 +141,7 @@ a {
       background: #ec971f none; }
     .navbar.navbar-warning .navbar-nav .dropdown-menu li.divider,
     .navbar.navbar-warning .navbar-nav .sub-menu li.divider {
-      background-color: #f8d9ac;
+      background-color: #f4c37d;
       margin: 5px 0; }
     .navbar.navbar-warning .navbar-nav .dropdown-menu li a,
     .navbar.navbar-warning .navbar-nav .sub-menu li a {
@@ -149,10 +149,10 @@ a {
 
 .navbar.navbar-success {
   background-color: #5cb85c; }
-  .navbar.navbar-success .navbar-nav li > a {
+  .navbar.navbar-success a {
     color: #ffffff; }
-    .navbar.navbar-success .navbar-nav li > a:focus, .navbar.navbar-success .navbar-nav li > a:hover, .navbar.navbar-success .navbar-nav li > a:active {
-      background-color: #449d44; }
+  .navbar.navbar-success .navbar-nav li > a:focus, .navbar.navbar-success .navbar-nav li > a:hover, .navbar.navbar-success .navbar-nav li > a:active {
+    background-color: #449d44; }
   .navbar.navbar-success .navbar-nav li.active, .navbar.navbar-success .navbar-nav li.open, .navbar.navbar-success .navbar-nav li:focus, .navbar.navbar-success .navbar-nav li:hover, .navbar.navbar-success .navbar-nav li:active {
     background-color: #449d44; }
     .navbar.navbar-success .navbar-nav li.active > a, .navbar.navbar-success .navbar-nav li.open > a, .navbar.navbar-success .navbar-nav li:focus > a, .navbar.navbar-success .navbar-nav li:hover > a, .navbar.navbar-success .navbar-nav li:active > a {
@@ -175,7 +175,7 @@ a {
       background: #449d44 none; }
     .navbar.navbar-success .navbar-nav .dropdown-menu li.divider,
     .navbar.navbar-success .navbar-nav .sub-menu li.divider {
-      background-color: #a3d7a3;
+      background-color: #80c780;
       margin: 5px 0; }
     .navbar.navbar-success .navbar-nav .dropdown-menu li a,
     .navbar.navbar-success .navbar-nav .sub-menu li a {
@@ -183,10 +183,10 @@ a {
 
 .navbar.navbar-danger {
   background-color: #d9534f; }
-  .navbar.navbar-danger .navbar-nav li > a {
+  .navbar.navbar-danger a {
     color: #ffffff; }
-    .navbar.navbar-danger .navbar-nav li > a:focus, .navbar.navbar-danger .navbar-nav li > a:hover, .navbar.navbar-danger .navbar-nav li > a:active {
-      background-color: #c9302c; }
+  .navbar.navbar-danger .navbar-nav li > a:focus, .navbar.navbar-danger .navbar-nav li > a:hover, .navbar.navbar-danger .navbar-nav li > a:active {
+    background-color: #c9302c; }
   .navbar.navbar-danger .navbar-nav li.active, .navbar.navbar-danger .navbar-nav li.open, .navbar.navbar-danger .navbar-nav li:focus, .navbar.navbar-danger .navbar-nav li:hover, .navbar.navbar-danger .navbar-nav li:active {
     background-color: #c9302c; }
     .navbar.navbar-danger .navbar-nav li.active > a, .navbar.navbar-danger .navbar-nav li.open > a, .navbar.navbar-danger .navbar-nav li:focus > a, .navbar.navbar-danger .navbar-nav li:hover > a, .navbar.navbar-danger .navbar-nav li:active > a {
@@ -209,7 +209,7 @@ a {
       background: #c9302c none; }
     .navbar.navbar-danger .navbar-nav .dropdown-menu li.divider,
     .navbar.navbar-danger .navbar-nav .sub-menu li.divider {
-      background-color: #eba5a3;
+      background-color: #e27c79;
       margin: 5px 0; }
     .navbar.navbar-danger .navbar-nav .dropdown-menu li a,
     .navbar.navbar-danger .navbar-nav .sub-menu li a {
@@ -217,10 +217,10 @@ a {
 
 .navbar.navbar-black {
   background-color: #101010; }
-  .navbar.navbar-black .navbar-nav li > a {
+  .navbar.navbar-black a {
     color: #ffffff; }
-    .navbar.navbar-black .navbar-nav li > a:focus, .navbar.navbar-black .navbar-nav li > a:hover, .navbar.navbar-black .navbar-nav li > a:active {
-      background-color: black; }
+  .navbar.navbar-black .navbar-nav li > a:focus, .navbar.navbar-black .navbar-nav li > a:hover, .navbar.navbar-black .navbar-nav li > a:active {
+    background-color: black; }
   .navbar.navbar-black .navbar-nav li.active, .navbar.navbar-black .navbar-nav li.open, .navbar.navbar-black .navbar-nav li:focus, .navbar.navbar-black .navbar-nav li:hover, .navbar.navbar-black .navbar-nav li:active {
     background-color: black; }
     .navbar.navbar-black .navbar-nav li.active > a, .navbar.navbar-black .navbar-nav li.open > a, .navbar.navbar-black .navbar-nav li:focus > a, .navbar.navbar-black .navbar-nav li:hover > a, .navbar.navbar-black .navbar-nav li:active > a {
@@ -243,7 +243,7 @@ a {
       background: black none; }
     .navbar.navbar-black .navbar-nav .dropdown-menu li.divider,
     .navbar.navbar-black .navbar-nav .sub-menu li.divider {
-      background-color: #434343;
+      background-color: #2a2929;
       margin: 5px 0; }
     .navbar.navbar-black .navbar-nav .dropdown-menu li a,
     .navbar.navbar-black .navbar-nav .sub-menu li a {

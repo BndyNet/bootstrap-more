@@ -78,10 +78,13 @@ a {
   .navbar.navbar-#{$name} {
     background-color: $color;
 
+    a {
+      color: #ffffff;
+    }
+
     .navbar-nav {
       li {
         & > a {
-          color: #ffffff;
 
           &:focus,
           &:hover,
@@ -126,7 +129,7 @@ a {
           }
 
           &.divider {
-            background-color: lighten($color, 20%);
+            background-color: lighten($color, 10%);
             margin: 5px 0;
           }
 
