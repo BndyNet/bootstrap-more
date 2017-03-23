@@ -1,6 +1,8 @@
-﻿# [Bootstrap More](https://github.com/bndynet/bootstrap-more)
+# [Bootstrap More](https://github.com/bndynet/bootstrap-more)
 
 This is the extensions based on Bootstrap. 
+
+[DEMO](http://bndy.net/bootstrap-more/demo/)
 
 
 ## Dependencies
