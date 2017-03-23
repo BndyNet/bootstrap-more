@@ -15,11 +15,22 @@ a {
     li {
       position: relative;
 
+      &:focus,
       &:hover,
-      &:focus {
+      &:active {
+        background: none #e7e7e7;
+
         & > .sub-menu {
           display: block;
         }
+      }
+    }
+
+    a {
+      &:focus,
+      &:hover,
+      &:active {
+        background: none #e7e7e7;
       }
     }
 
@@ -38,6 +49,15 @@ a {
       margin: 0;
       z-index: 999;
       box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+
+      a,
+      li {
+        &:focus,
+        &:hover,
+        &:active {
+          background: none #f8f8f8;
+        }
+      }
 
       a {
         color: #333;
@@ -58,24 +78,35 @@ a {
   .navbar.navbar-#{$name} {
     background-color: $color;
 
-    a {
-      color: #ffffff;
-    }
-
     .navbar-nav {
       li {
         & > a {
+          color: #ffffff;
+
           &:focus,
           &:hover,
           &:active {
             background-color: darken($color, 10%);
           }
         }
+
+        &.active,
+        &.open,
+        &:focus,
+        &:hover,
+        &:active {
+          background-color: darken($color, 10%);
+
+          & > a {
+            background-color: darken($color, 10%);
+          }
+        }
       }
 
-      li.active,
-      li.open {
-        & > a{
+      a {
+        &:focus,
+        &:hover,
+        &:active {
           background-color: darken($color, 10%);
         }
       }
@@ -482,6 +513,10 @@ ng\:form {
         box-shadow: none;
       }
     }
+  }
+
+  .dropdown-menu {
+    border: none;
   }
 
   /* alert */
