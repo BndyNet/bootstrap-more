@@ -73,7 +73,23 @@ $ ->
     $(".nav-article li").removeClass("active")
     $(this).parent().addClass("active")
 
-
-
+  #sidepanel
+  $(".side-panel").each (item) ->
+    screenWidth = $(window).width()
+    screenHeight = $(window).height()
+    top = $(this).attr("top")
+    left = $(this).attr("left")
+    bottom = $(this).attr("bottom")
+    bottom = 0 if not bottom
+    $(this).css top: "#{top}px", height: screenHeight - top - bottom if top
+    $(this).css left: "#{left}px", width: screenWidth - left if left
+    $(this).css marginLeft: $(this).width()
+  $(document).on "click", "[data-toggle='sidepanel']", ->
+    target = $(this).attr "data-target"
+    targetEle = $("##{target}")
+    targetEle.animate marginLeft: 0
+  $(".side-panel").on "click", ".dismiss", ->
+    targetEle = $(this).closest(".side-panel")
+    targetEle.animate marginLeft: targetEle.width()
 
   return

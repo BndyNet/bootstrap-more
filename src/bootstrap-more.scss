@@ -532,3 +532,34 @@ ng\:form {
     background-image: none;
   }
 }
+
+/* side panel */
+.side-panel {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  border: solid 1px #efefef;
+  background-color: #ffffff;
+
+  .heading {
+    font-size: 1.5em;
+    padding: 15px;
+    border-bottom: solid 1px #efefef;
+
+    .title {
+      display: inline-block;
+    }
+
+    .toolbox {
+      float: right;
+    }
+  }
+
+  .dismiss {
+    cursor: pointer;
+    padding: 5px;
+  }
+}

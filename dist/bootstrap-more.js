@@ -82,4 +82,45 @@ $(function() {
     $(".nav-article li").removeClass("active");
     return $(this).parent().addClass("active");
   });
+  $(".side-panel").each(function(item) {
+    var bottom, left, screenHeight, screenWidth, top;
+    screenWidth = $(window).width();
+    screenHeight = $(window).height();
+    top = $(this).attr("top");
+    left = $(this).attr("left");
+    bottom = $(this).attr("bottom");
+    if (!bottom) {
+      bottom = 0;
+    }
+    if (top) {
+      $(this).css({
+        top: top + "px",
+        height: screenHeight - top - bottom
+      });
+    }
+    if (left) {
+      $(this).css({
+        left: left + "px",
+        width: screenWidth - left
+      });
+    }
+    return $(this).css({
+      marginLeft: $(this).width()
+    });
+  });
+  $(document).on("click", "[data-toggle='sidepanel']", function() {
+    var target, targetEle;
+    target = $(this).attr("data-target");
+    targetEle = $("#" + target);
+    return targetEle.animate({
+      marginLeft: 0
+    });
+  });
+  $(".side-panel").on("click", ".dismiss", function() {
+    var targetEle;
+    targetEle = $(this).closest(".side-panel");
+    return targetEle.animate({
+      marginLeft: targetEle.width()
+    });
+  });
 });
