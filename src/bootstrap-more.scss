@@ -542,11 +542,14 @@ ng\:form {
   width: 100%;
   height: 100%;
   border: solid 1px #efefef;
+  border-right: none;
   background-color: #ffffff;
+  overflow: hidden;
+  margin-left: 100%;
 
   .heading {
     font-size: 1.5em;
-    padding: 15px;
+    padding: .5em;
     border-bottom: solid 1px #efefef;
 
     .title {
@@ -556,6 +559,10 @@ ng\:form {
     .toolbox {
       float: right;
     }
+  }
+
+  .body {
+    padding: .5em;
   }
 
   .dismiss {

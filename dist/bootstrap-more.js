@@ -1,6 +1,6 @@
 "use strict";
 $(function() {
-  var _generateNav;
+  var _generateNav, initSidePanel;
   $(".panel-example textarea.code").each(function() {
     return $(this).val($(this).parents(".panel-example").find(".panel-body").html());
   });
@@ -82,45 +82,69 @@ $(function() {
     $(".nav-article li").removeClass("active");
     return $(this).parent().addClass("active");
   });
-  $(".side-panel").each(function(item) {
-    var bottom, left, screenHeight, screenWidth, top;
+  initSidePanel = function(sidepanel) {
+    var bottom, heading, left, screenHeight, screenWidth, top;
+    $("body").css({
+      overflow: "hidden"
+    });
+    sidepanel.css({
+      display: "block"
+    });
     screenWidth = $(window).width();
     screenHeight = $(window).height();
-    top = $(this).attr("top");
-    left = $(this).attr("left");
-    bottom = $(this).attr("bottom");
+    top = sidepanel.attr("top");
+    left = sidepanel.attr("left");
+    bottom = sidepanel.attr("bottom");
     if (!bottom) {
       bottom = 0;
     }
+    sidepanel.css({
+      top: top + "px"
+    });
     if (top) {
-      $(this).css({
-        top: top + "px",
+      sidepanel.css({
         height: screenHeight - top - bottom
       });
     }
+    sidepanel.css({
+      left: left + "px"
+    });
     if (left) {
-      $(this).css({
-        left: left + "px",
+      sidepanel.css({
         width: screenWidth - left
       });
     }
-    return $(this).css({
+    sidepanel.css({
       marginLeft: $(this).width()
     });
-  });
+    heading = sidepanel.find(".heading:first");
+    return sidepanel.find(".body").css({
+      height: sidepanel.outerHeight() - heading.outerHeight() - 2,
+      overflow: "auto"
+    });
+  };
+  initSidePanel($("#sidepanel"));
   $(document).on("click", "[data-toggle='sidepanel']", function() {
     var target, targetEle;
     target = $(this).attr("data-target");
     targetEle = $("#" + target);
+    initSidePanel(targetEle);
     return targetEle.animate({
       marginLeft: 0
     });
   });
   $(".side-panel").on("click", ".dismiss", function() {
     var targetEle;
+    $("body").css({
+      overflow: "auto"
+    });
     targetEle = $(this).closest(".side-panel");
     return targetEle.animate({
       marginLeft: targetEle.width()
+    }, function() {
+      return $(this).css({
+        display: "none"
+      });
     });
   });
 });

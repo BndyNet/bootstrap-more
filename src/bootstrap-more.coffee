@@ -2,7 +2,7 @@
 
 $ ->
 
-  # show code for panel-example
+# show code for panel-example
   $(".panel-example textarea.code").each ->
     $(this).val($(this).parents(".panel-example").find(".panel-body").html())
 
@@ -74,22 +74,35 @@ $ ->
     $(this).parent().addClass("active")
 
   #sidepanel
-  $(".side-panel").each (item) ->
+  initSidePanel = (sidepanel) ->
+    $("body").css overflow: "hidden"
+    sidepanel.css display: "block"
     screenWidth = $(window).width()
     screenHeight = $(window).height()
-    top = $(this).attr("top")
-    left = $(this).attr("left")
-    bottom = $(this).attr("bottom")
+    top = sidepanel.attr("top")
+    left = sidepanel.attr("left")
+    bottom = sidepanel.attr("bottom")
     bottom = 0 if not bottom
-    $(this).css top: "#{top}px", height: screenHeight - top - bottom if top
-    $(this).css left: "#{left}px", width: screenWidth - left if left
-    $(this).css marginLeft: $(this).width()
+    sidepanel.css top: "#{top}px"
+    sidepanel.css height: screenHeight - top - bottom if top
+    sidepanel.css left: "#{left}px"
+    sidepanel.css width: screenWidth - left if left
+    sidepanel.css marginLeft: $(this).width()
+      # set body height
+    heading = sidepanel.find(".heading:first")
+    sidepanel.find(".body").css
+      height: sidepanel.outerHeight() - heading.outerHeight() - 2
+      overflow: "auto"
+  initSidePanel($("#sidepanel"))
   $(document).on "click", "[data-toggle='sidepanel']", ->
     target = $(this).attr "data-target"
     targetEle = $("##{target}")
+    initSidePanel targetEle
     targetEle.animate marginLeft: 0
   $(".side-panel").on "click", ".dismiss", ->
+    $("body").css overflow: "auto"
     targetEle = $(this).closest(".side-panel")
-    targetEle.animate marginLeft: targetEle.width()
+    targetEle.animate marginLeft: targetEle.width(), ->
+      $(this).css display: "none"
 
   return
