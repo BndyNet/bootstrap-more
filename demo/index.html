@@ -381,22 +381,29 @@
         <section class="flat">
             <h3>Side Panel</h3>
 
-            <button class="btn btn-primary" data-toggle="sidepanel" data-target="sidepanel">Open</button>
-            <div id="sidepanel" class="side-panel" top="50" left="100" bottom="100">
-                <div class="heading">
-                    <div class="title">
-                        Title
-                    </div>
-                    <div class="toolbox">
-                        <a class="dismiss">
-                            <i class="fa fa-close"></i>
-                        </a>
+            <div class="panel panel-default panel-example">
+                <div class="panel-body">
+                    <button class="btn btn-primary" data-toggle="sidepanel" data-target="sidepanel">Open</button>
+                    <div id="sidepanel" class="side-panel" top="50" left="100" bottom="100">
+                        <div class="heading">
+                            <div class="title">
+                                Title
+                            </div>
+                            <div class="toolbox">
+                                <a class="dismiss">
+                                    <i class="fa fa-close"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <div style="height: 700px; background-color: #efefef">
+                                Here is the body.
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="body">
-                    <div style="height: 700px; background-color: #efefef">
-                        Here is the body.
-                    </div>
+                <div class="panel-footer">
+                    <textarea class="code"></textarea>
                 </div>
             </div>
         </section>

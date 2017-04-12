@@ -80,8 +80,14 @@ $(function() {
   });
   $(".nav-article").on("click", "a", function() {
     $(".nav-article li").removeClass("active");
-    return $(this).parent().addClass("active");
+    $(this).parent().addClass("active");
+    return console.debug($(this).parent().html());
   });
+  if ($(".page-article").length > 0) {
+    $("body").scrollspy({
+      target: ".nav-article"
+    });
+  }
   initSidePanel = function(sidepanel) {
     var bottom, heading, left, screenHeight, screenWidth, top;
     $("body").css({
@@ -123,7 +129,6 @@ $(function() {
       overflow: "auto"
     });
   };
-  initSidePanel($("#sidepanel"));
   $(document).on("click", "[data-toggle='sidepanel']", function() {
     var target, targetEle;
     target = $(this).attr("data-target");

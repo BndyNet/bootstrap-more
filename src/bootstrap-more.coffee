@@ -72,6 +72,9 @@ $ ->
   $(".nav-article").on "click", "a", ->
     $(".nav-article li").removeClass("active")
     $(this).parent().addClass("active")
+    console.debug $(this).parent().html()
+  if $(".page-article").length > 0
+    $("body").scrollspy target: ".nav-article"
 
   #sidepanel
   initSidePanel = (sidepanel) ->
@@ -93,7 +96,6 @@ $ ->
     sidepanel.find(".body").css
       height: sidepanel.outerHeight() - heading.outerHeight() - 2
       overflow: "auto"
-  initSidePanel($("#sidepanel"))
   $(document).on "click", "[data-toggle='sidepanel']", ->
     target = $(this).attr "data-target"
     targetEle = $("##{target}")

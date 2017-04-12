@@ -1,4 +1,7 @@
 /* $color-error: #ff6a00 !default; */
+body {
+  position: relative; }
+
 a {
   cursor: pointer; }
 
@@ -337,17 +340,15 @@ form.readonly {
   padding: 20px; }
   .page-article .sections section {
     padding-bottom: 30px; }
-  .page-article .navs ul.nav-article li {
+  .page-article .navs ul.nav-article li.active > a {
+    border-left-color: blue;
+    font-weight: bold; }
+  .page-article .navs ul.nav-article li a {
+    padding: 5px 10px;
     border-left: solid 2px transparent; }
-    .page-article .navs ul.nav-article li.active {
-      border-left-color: blue; }
-      .page-article .navs ul.nav-article li.active > a {
-        font-weight: bold; }
-    .page-article .navs ul.nav-article li a {
-      padding: 5px 10px; }
-    .page-article .navs ul.nav-article li ul a {
-      font-size: .9em;
-      padding-left: 15px; }
+  .page-article .navs ul.nav-article li ul a {
+    font-size: .9em;
+    padding-left: 15px; }
 
 /* angular */
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak],

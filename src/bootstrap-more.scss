@@ -1,5 +1,9 @@
 @import "_variables.scss";
 
+body {
+  position: relative;
+}
+
 a {
   cursor: pointer;
 }
@@ -315,17 +319,16 @@ form {
   .navs {
     ul.nav-article {
       li {
-        border-left: solid 2px transparent;
         &.active {
-          border-left-color: blue;
-
           & > a {
+            border-left-color: blue;
             font-weight: bold;
           }
         }
 
         a {
           padding: 5px 10px;
+          border-left: solid 2px transparent;
         }
 
         ul a {
