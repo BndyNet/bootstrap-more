@@ -306,6 +306,78 @@ form {
   }
 }
 
+/* Tab Panel */
+@mixin tabPanelTheme($name, $color) {
+  &.panel-#{$name} {
+    .nav-tabs {
+      border-bottom-color: $color;
+
+      & > li {
+        margin-bottom: 0;
+
+        &.active {
+          & > a,
+          & > a:focus,
+          & > a:hover {
+            background-color: $color;
+            border-color: $color;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .tab-content {
+      .tab-pane {
+        border-color: $color;
+      }
+    }
+  }
+}
+.tab-panel {
+  &.panel {
+    border: none;
+    box-shadow: none;
+
+    .nav-tabs {
+      position: relative;
+      border-bottom: solid 2px transparent;
+
+      & > li {
+        position: static;
+
+        .toolbox {
+          display: none;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          padding: 10px;
+        }
+
+        &.active {
+          .toolbox {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .tab-content {
+      background-color: #fbfbfb;
+
+      .tab-pane {
+        padding: 15px;
+      }
+    }
+
+    @include tabPanelTheme('primary', $color-primary);
+    @include tabPanelTheme('info', $color-info);
+    @include tabPanelTheme('warning', $color-warning);
+    @include tabPanelTheme('success', $color-success);
+    @include tabPanelTheme('danger', $color-danger);
+  }
+}
+
 /* page-article */
 .page-article {
   padding: 20px;
