@@ -1,3 +1,8 @@
+/*!
+ * bootstrap-more v1.0.0 (https://github.com/BndyNet/bootstrap-more#readme)
+ * (c) 2014-2017 Bndy.Net (http://www.bndy.net)
+ */
+
 "use strict";
 $(function() {
   var _generateNav, initSidePanel;

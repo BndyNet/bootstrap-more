@@ -8,9 +8,19 @@ a {
   cursor: pointer;
 }
 
+.ellipsis {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
 /* bootstrap extensions */
 .label {
   font-weight: normal;
+}
+
+.form-control[readonly] {
+  background-color: #ffffff;
 }
 
 /* navbar */

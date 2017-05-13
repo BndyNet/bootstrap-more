@@ -1,3 +1,8 @@
+/*!
+ * bootstrap-more v1.0.0 (https://github.com/BndyNet/bootstrap-more#readme)
+ * (c) 2014-2017 Bndy.Net (http://www.bndy.net)
+ */
+
 /* $color-error: #ff6a00 !default; */
 body {
   position: relative; }
@@ -5,9 +10,17 @@ body {
 a {
   cursor: pointer; }
 
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
 /* bootstrap extensions */
 .label {
   font-weight: normal; }
+
+.form-control[readonly] {
+  background-color: #ffffff; }
 
 /* navbar */
 .navbar .navbar-nav li {
