@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap-more",
+  "name": "@bndynet/bootstrap-more",
   "version": "1.0.0",
   "description": "Extensions for bootstrap",
   "main": "index.js",
